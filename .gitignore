@@ -1,0 +1,30 @@
+#Enviromet
+*.env
+!.env.example
+!.env.template
+
+#Code editors temp files (vscod, vim, jetbrains ...)
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+#Tipical temp files
+temp/
+tmp/
+
+#Logs
+*.log
+logs/
+
+# Generated artifacts
+objs/
+dist/
+out/
+
+
+#backups
+*.bak
+*.old
+*.orig
