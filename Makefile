@@ -6,7 +6,7 @@
 #    By: anruiz-d <anruiz-d@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/02 15:52:55 by anruiz-d          #+#    #+#              #
-#    Updated: 2026/11/02 19:37:00 by anruiz-d         ###   ########.fr        #
+#    Updated: 2026/11/02 20:57:22 by anruiz-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ front-logs:
 front-clean:
 	$(COMPOSE) rm -sf frontend
 
-front-fclean: clean
+front-fclean: front-clean
 	@docker image rm compose-frontend:latest 2>/dev/null || true
 	@docker volume rm compose_frontend_node_modules 2>/dev/null || true
 

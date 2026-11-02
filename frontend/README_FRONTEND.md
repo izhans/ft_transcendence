@@ -148,28 +148,3 @@ When the backend is unavailable, the frontend displays:
 ```text
 Backend no disponible todavía
 ```
-
-The service name, port, endpoint and response format must be confirmed with the backend team during integration.
-
-The frontend currently handles the request and connection errors, but the end-to-end test with Spring Boot is still pending.
-
-## 7. Current Status
-
-### Completed
-
-- React, TypeScript and Vite initialization.
-- Development Dockerfile.
-- Docker Compose frontend service.
-- Frontend-specific Makefile commands.
-- HTTP GET request implementation.
-- Vite development proxy configuration.
-- HTTP error handling.
-- Successful TypeScript build and ESLint validation.
-- npm security audit with no reported vulnerabilities at the time of validation.
-
-### Pending
-
-- Integration with the Spring Boot backend.
-- End-to-end verification of the `Hola mundo` response.
-
-This initial implementation provides a reproducible frontend development environment before implementing the Cluedo game features.
