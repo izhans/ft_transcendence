@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const controller = new AbortController()
 
-    fetch('/api/hello', {
+    fetch('/api', {
       method: 'GET',
       signal: controller.signal,
     })
