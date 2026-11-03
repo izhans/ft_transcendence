@@ -18,3 +18,23 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+# Files generated specifically by the frontend service
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Vite cache
+.vite/
+
+# Test coverage reports
+coverage/
+
+# TypeScript-generated files
+*.tsbuildinfo
+
+# npm logs
+npm-debug.log*
