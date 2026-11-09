@@ -1,26 +1,26 @@
 
-# Modulos de node se genrean en el entorno
+# Node modules are generated in the environment.
 node_modules
 
-# El build se egenra en el entorno
+# The build is generated in the environment.
 dist
 
-# Cosas de git 
+# Git files
 .git
 .gitignore
 .gitattributes
 
-# Enviroment
+# Environment files
 .env
 .env.*
 
-#Makefile por si se añade
+# Exclude the Makefile if one is added.
 Makefile
 
-# IDEs
+# IDE files
 .vscode/
 .idea/
 
-# Archivos del sistema
+# System files
 .DS_Store
 Thumbs.db

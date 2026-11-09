@@ -1,28 +1,29 @@
 
 
-#El target con el codigo compoilador a .class y .jar (compilamos en el entorno reproducible)
+# Compiled .class and .jar files are generated in the reproducible build environment.
 target/
 
-# Los scripts y usu configuraciones para ejecutar maven en local no son necesarios en los contenedores porque lo instalamos gloablmente
+# Local Maven scripts and configuration are unnecessary in containers because Maven is installed globally.
 .mvn/
 mvnw
 mvnw.cmd
 
-#Cosas de git
+# Git files
 .git
 .gitignore
 .gitattributes
 
-# Entornos 
+# Environment files
 .env
+.env.*
 
-#Makefile por si se añade
+# Exclude the Makefile if one is added.
 Makefile
 
-# IDEs genericos
+# Generic IDE files
 .vscode/
 
-#Por si usas entorno de desarrrollo-IDE de eclipse
+# Eclipse IDE files
 .apt_generated
 .classpath
 .factorypath
@@ -31,13 +32,13 @@ Makefile
 .springBeans
 .sts4-cache
 
-#Por si usas entorno de desarrrollo-IDE de IntelliJ IDEA
+# IntelliJ IDEA files
 .idea/
 *.iws
 *.iml
 *.ipr
 
-#Por si usas entorno de desarrrollo-IDE de NetBeans
+# NetBeans IDE files
 /nbproject/private/
 /nbbuild/
 /dist/

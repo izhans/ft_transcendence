@@ -20,7 +20,7 @@ services:
     ports:
       - "5173:5173"
     environment:
-      API_TARGET: http://backend:8080 #Esto en unfituro deberia ser una variable de entorno o local del MAKEFILE
+      API_TARGET: http://backend:8080 # This should eventually be an environment variable or defined locally in the Makefile.
     depends_on:
       backend:
         condition: service_healthy
@@ -30,7 +30,7 @@ services:
           "CMD",
           "node",
           "-e",
-          "fetch('http://localhost:5173/').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))", #Esto se va a camibar por un archiv en scripts y con la URL con variables de entorno
+          "fetch('http://localhost:5173/').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))", # This will be moved to a script file and use an environment variable for the URL.
         ]
       interval: 10s
       timeout: 5s

@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vite cache
+.vite/
+
+# Test coverage reports
+coverage/
+
+# TypeScript-generated files
+*.tsbuildinfo

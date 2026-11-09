@@ -1,4 +1,4 @@
-#Dockerfile de desarrollo 1.0 (en /frontend junto con el resto del servicio)
+# Development Dockerfile 1.0 (in /frontend alongside the rest of the service)
 
 FROM node:22-alpine
 WORKDIR /app

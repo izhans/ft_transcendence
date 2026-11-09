@@ -1,4 +1,4 @@
-#Dockerfile de desarrollo 1.0 (en /backend junto con el resto del servicio)
+# Development Dockerfile 1.0 (in /backend alongside the rest of the service)
 
 FROM eclipse-temurin:25-jdk
 WORKDIR /app
