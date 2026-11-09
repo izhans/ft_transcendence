@@ -1,0 +1,48 @@
+
+
+#El target con el codigo compoilador a .class y .jar (compilamos en el entorno reproducible)
+target/
+
+# Los scripts y usu configuraciones para ejecutar maven en local no son necesarios en los contenedores porque lo instalamos gloablmente
+.mvn/
+mvnw
+mvnw.cmd
+
+#Cosas de git
+.git
+.gitignore
+.gitattributes
+
+# Entornos 
+.env
+
+#Makefile por si se añade
+Makefile
+
+# IDEs genericos
+.vscode/
+
+#Por si usas entorno de desarrrollo-IDE de eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+#Por si usas entorno de desarrrollo-IDE de IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+#Por si usas entorno de desarrrollo-IDE de NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
