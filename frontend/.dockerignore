@@ -1,0 +1,26 @@
+
+# Modulos de node se genrean en el entorno
+node_modules
+
+# El build se egenra en el entorno
+dist
+
+# Cosas de git 
+.git
+.gitignore
+.gitattributes
+
+# Enviroment
+.env
+.env.*
+
+#Makefile por si se añade
+Makefile
+
+# IDEs
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
