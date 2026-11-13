@@ -1,0 +1,26 @@
+
+# Node modules are generated in the environment.
+node_modules
+
+# The build is generated in the environment.
+dist
+
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Environment files
+.env
+.env.*
+
+# Exclude the Makefile if one is added.
+Makefile
+
+# IDE files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

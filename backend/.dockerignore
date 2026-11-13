@@ -1,0 +1,49 @@
+
+
+# Compiled .class and .jar files are generated in the reproducible build environment.
+target/
+
+# Local Maven scripts and configuration are unnecessary in containers because Maven is installed globally.
+.mvn/
+mvnw
+mvnw.cmd
+
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Environment files
+.env
+.env.*
+
+# Exclude the Makefile if one is added.
+Makefile
+
+# Generic IDE files
+.vscode/
+
+# Eclipse IDE files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans IDE files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
