@@ -48,3 +48,20 @@ The message must come directly from the backend and is not hardcoded in React.
 During local development, Vite forwards requests to `/api` to the Spring Boot backend running at `http://localhost:8080`.
 
 The backend must be running for the request to succeed. If it is unavailable, the frontend displays an error message.
+
+### Available commands from the Makefile
+
+| Command | Description |
+|---|---|
+| `make front-up` | Build and start the frontend |
+| `make front-down` | Stop the frontend without removing its container |
+| `make front-build` | Build the frontend Docker image |
+| `make front-logs` | Display frontend logs |
+| `make front-clean` | Stop and remove the frontend container |
+| `make front-fclean` | Remove the frontend container, image and dependency volume |
+| `make front-re` | Clean and rebuild the frontend |
+| `make help-front` | Display the available frontend commands |
+
+These commands target only the frontend service, allowing other services to be managed independently.
+
+**Note:** `make front-fclean` removes the frontend dependency volume. The source code remains in the local repository.
